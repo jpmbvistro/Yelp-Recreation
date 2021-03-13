@@ -1,0 +1,407 @@
+/* Box Model Hack */
+/* Shay Howe */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*for grouping floating elements*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+a {
+  text-decoration: none;
+}
+
+h2, h3 {
+  color: rgb(207, 45, 45);
+  font-weight: 700;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+h3 {
+
+  text-align: center;
+}
+
+h4 {
+  font-weight: 700;
+  color: rgb(0, 95, 187);
+  margin-bottom: 10px;
+}
+
+header {
+  background-image: url(../img/hero.jpg);
+  width: 100%;
+  background-size: cover;
+  background-color: rgb(207, 45, 45);
+
+  color: white;
+  padding: 50px;
+}
+
+header a {
+  color: white;
+}
+
+header input,
+button {
+  background-color: none;
+  border: none;
+}
+
+header label {
+  color: rgb(150, 150, 150);
+
+}
+
+body {
+  font-family: helvetica, sans-serif;
+}
+
+button {
+
+  cursor: pointer;
+}
+
+em {
+  font-weight: 700;
+}
+
+footer {
+
+}
+
+.browse-category {
+  background-color: rgb(243, 243, 243);
+  padding: 20px;
+}
+
+.hot-businesses {
+  font-size: 16px;
+}
+
+.hot-businesses > p a {
+  color: rgb(0, 95, 187);
+}
+
+.hot-open {
+  color: #EF5000;
+}
+
+
+
+.loc-select a{
+  color: #363636;
+  font-size: 12px;
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+form {
+  width: 100%;
+  text-align: left;
+}
+
+form label {
+  width: 10%;
+}
+
+form input {
+  width: 85%;
+}
+
+form > * {
+  float: left;
+  padding: 10px;
+}
+
+form > section {
+  width: 90%;
+}
+
+form > section > section {
+  width: 45%;
+  float: left;
+}
+
+nav {
+  float: left;
+}
+
+nav + section {
+  float: right;
+}
+
+li {
+  display: inline-block;
+}
+
+.browse-category {
+  padding-bottom: 100px;
+}
+
+.browse-category li {
+  float: left;
+  margin-left: 20px;
+  width: 22%;
+  padding: 20px;
+  border: 1px solid rgba(150, 150, 150, 0.3);
+  background-color: white;
+  border-radius: 5px;
+}
+
+.browse-category img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.hero-credits {
+  margin: 200px auto 0 auto;
+  text-align: center;
+  font-size: 12px;
+}
+
+.hot-businesses li {
+  float: left;
+  width: 30%;
+  border-radius: 5px;
+  border: 1px solid rgba(150, 150, 150, 0.5);
+  margin-left: 20px;
+}
+
+/* Use this if flex-box */
+.hot-businesses li + li {
+
+}
+
+.hot-businesses li a > section {
+  padding: 10px;
+}
+
+.hot-businesses section p,
+.hot-businesses section span {
+  color: #363636;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.hot-businesses > p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+
+.loc-select{
+  text-align: center;
+  padding-bottom: 20px;
+  /* Referenced yelp  */
+  border-bottom: 1px solid rgba(150, 150, 150, .5);
+}
+
+.loc-select li + li {
+  margin-left: 20px;
+}
+
+.logo {
+  max-width: 120px;
+  margin: 50px;
+}
+
+.main {
+  padding: 30px;
+}
+
+.readable-width {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.rest-prev {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.search {
+  text-align: center;
+  margin: 100px;
+}
+
+.search > * {
+  margin-bottom: 20px;
+}
+
+.search li + li {
+  margin-left: 20px;
+}
+
+.search-button {
+  background-color: rgba(205, 32, 32);
+  width: 10%;
+
+}
+
+.stars {
+  width: 100px;
+}
+
+.top-nav * + * {
+  margin-left: 20px;
+}
+
+@media (max-width: 1000px){
+  .search {
+    margin: 0;
+  }
+
+  .search input{
+    width: 80%;
+  }
+}
+
+@media (max-width: 700px){
+
+  header {
+    background-image: none;
+  }
+
+  form > section {
+    width: 90%;
+  }
+  form > section > section {
+    width: 100%;
+  }
+  form > section > section + section {
+    padding-top: 10px;
+  }
+
+  .browse-category li {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .browse-category img {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .search-button {
+    height: 64px;;
+  }
+
+  .hero-credits {
+    display: none;
+  }
+
+  .hot-businesses li{
+    width: 100%;
+  }
+
+  .hot-businesses li a > * {
+    float: left;
+    margin: 20px;
+  }
+
+  .rest-prev {
+    height:auto;
+    width: 20%
+
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  header{
+  padding: .5rem;
+  }
+  .top-nav nav {
+    display: none;
+  }
+
+  .top-nav > section {
+    float: none;
+    text-align: center;
+  }
+
+  .categories-top {
+    display: none;
+  }
+
+  .hot-businesses li {
+    margin-left: 0;
+  }
+
+  .loc-select {
+    display: none;
+  }
+}
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+.icon {
+  width: 16px;
+}
+
+form label {
+  font-weight: 700;
+}
+
+form > *:first-child {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+form > *:last-child {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+header form > section {
+  background-color: white;
+  border: none;
+}
+
+
+
+
+.sign-up {
+  padding: 10px 20px;
+  border: 3px solid white;
+  border-radius: 5px;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header>
+      <section class="readable-width">
+        <section class="top-nav group">
+          <nav>
+            <ul>
+              <li><a href="#">Write a Review</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Talk</a></li>
+            </ul>
+          </nav>
+          <section>
+            <span><a href="#">Login</a></span>
+            <span><a href="#" class="sign-up">Sign Up</a></span>
+          </section>
+        </section>
+        <section class="search">
+          <!-- Logo shared by Jerry Lafume -->
+          <img class="logo" src="img/yelp-logo.png" alt="Yelp Logo">
+          <form id="search" class="group" action="index.html" method="post">
+            <section>
+              <section>
+                <label for="search-value">Find</label>
+                <input id="search-value" type="text" name="subject" placeholder="burgers, barbers, spas, handymen..." value="">
+              </section>
+              <section>
+                <label for="search-value">Near</label>
+                <input type="text" name="location" value="Boston, MA 2108">
+              </section>
+            </section>
+
+            <button class="search-button" type="submit" form="search" name="button">
+              <img class="icon" src="img/magnifying-icon.png" alt="">
+            </button>
+          </form>
+          <!-- categories -->
+          <section class="categories-top">
+            <ul>
+              <!-- Icons from iconsdb.com -->
+              <li><a href="#">
+                <img class="icon" src="img/res-icon.png" alt="restaurant icon">
+                <span>Restaurants</span>
+              </a></li>
+              <li><a href="#">
+                <img class="icon"src="img/cocktail-icon.png" alt="Nightlife icon">
+                <span>Nightlife</span>
+              </a></li>
+              <li><a href="#">
+                <img class="icon" src="img/wrench-icon.png" alt="Home Services icon">
+                <span>Home Services</span>
+              </a></li>
+              <li><a href="#">
+                <img class="icon" src="img/truck-icon.png" alt="Delivery icon">
+                <span>Delivery</span>
+              </a></li>
+            </ul>
+          </section>
+        </section>
+        <!-- Photo Details -->
+        <section class="hero-credits">
+          <p><em>Swamp Food</em></p>
+          <p>Photo by <em>Juan Vistro</em></p>
+        </section>
+      </section>
+    </header>
+
+    <!-- Main Content -->
+    <section class="main">
+      <section class="readable-width">
+        <section class="loc-select">
+          <h2>Yelp Boston</h2>
+          <ul>
+            <li><a href="#">San Francisco</a></li>
+            <li><a href="#">New York</a></li>
+            <li><a href="#">San Jose</a></li>
+            <li><a href="#">Los Angeles</a></li>
+            <li><a href="#">Chicago</a></li>
+            <li><a href="#">Palo Alto</a></li>
+            <li>
+              <img class="icon" src="img/search-grey-icon.png" alt="Search Icon">
+              <a href="#">More Cities</a>
+            </li>
+          </ul>
+        </section>
+        <section class="hot-businesses">
+          <h3>Hot & New Businesses</h3>
+          <ul class="group">
+            <li>
+              <a class="group" href="#">
+                <img class="rest-prev" src="img/menu.png" alt="Menu">
+                <section>
+                  <h4>Business Name</h4>
+                  <img class="stars" src="img/star-review.png" alt="Stars">
+                  <span>7 reviews</span>
+                  <p>Thai</p>
+                  <p>Davis Square</p>
+                  <p class="hot-open">
+                    <img class="icon" src="img/fire-orange-icon.png" alt="fire icon"> Opened 5 weeks ago
+                  </p>
+                </section>
+              </a>
+            </li>
+            <li>
+              <a class="group" href="#">
+                <img class="rest-prev" src="img/bar.png" alt="bar">
+                <section>
+                  <h4>Flatbread Company Brighton</h4>
+                  <img class="stars" src="img/star-review.png" alt="Stars">
+                  <span>11 reviews</span>
+                  <p>$$ - Pizza</p>
+                  <p>Boston, MA</p>
+                  <p>
+                    <img class="icon" src="img/fire-orange-icon.png" alt="fire icon"> Opened 5 weeks ago
+                  </p>
+                </section>
+              </a>
+            </li>
+            <li>
+              <a class="group" href="#">
+                <img class="rest-prev" src="img/dish.png" alt="dish">
+                <section>
+                  <h4>Citrus & Salt</h4>
+                  <img class="stars" src="img/star-review.png" alt="Stars">
+                  <span>27 reviews</span>
+                  <p>$$ - Cocktail Bars, Mexican</p>
+                  <p>Locations</p>
+                  <p>
+                    <img class="icon" src="img/fire-orange-icon.png" alt="icon"> Opened 5 weeks ago
+                  </p>
+                </section>
+              </a>
+            </li>
+          </ul>
+          <p><a href="#">See more hot and new businesses</a></p>
+        </section>
+      </section>
+    </section>
+    <section class="browse-category">
+      <section class="readable-width">
+        <h2>Browse Businesses by Category</h2>
+        <ul class="group">
+          <li>
+            <a href="#">
+              <img src="img/restaurant-category.png" alt="restaurant Category Image">
+            </a>
+          </li>
+          <li><a href="#">
+            <img src="img/shopping-category.png" alt="Shopping Category Image">
+          </a></li>
+          <li><a href="#">
+            <img src="img/night-category.png" alt=" Nightlife Category Image">
+          </a></li>
+          <li><a href="#">
+            <img src="img/active-category.png" alt="Active Category Image">
+          </a></li>
+        </ul>
+      </section>
+    </section>
+
+  </body>
+</html>
